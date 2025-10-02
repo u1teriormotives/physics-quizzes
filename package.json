@@ -1,0 +1,21 @@
+{
+  "name": "physics-quizzes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/u1teriormotives/physics-quizzes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/u1teriormotives/physics-quizzes/issues"
+  },
+  "homepage": "https://github.com/u1teriormotives/physics-quizzes#readme"
+}
