@@ -133,6 +133,6 @@ server.on("request", async (req, res) => {
   }
 });
 
-server.listen(process.env.PORT, () =>
-  console.log(`Listening on port ${process.env.PORT}`)
+server.listen(process.env.PORT ?? 8080, () =>
+  console.log(`Listening on port ${process.env.PORT ?? 8080}`)
 );
