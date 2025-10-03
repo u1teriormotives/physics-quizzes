@@ -8,6 +8,23 @@ import errorHtml from "./errorHtml.js";
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const questionsPath = path.join(__dirname, "public", "questions");
+const questionsRoutes = fs.readdirSync(questionsPath);
+const questions = [];
+(async () => {
+  if (questionsRoutes.length > 0) {
+    for (const f of questionsRoutes) {
+      const p = path.join(questionsPath, f);
+      try {
+        const data = await fs.promises.readFile(p, "utf8");
+        questions.push(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  }
+})();
+
 const jsStaticPath = path.join(__dirname, "public", "js");
 const jsStaticRoutes = fs.readdirSync(jsStaticPath);
 const jsStaticSet = new Set(jsStaticRoutes);
@@ -86,6 +103,23 @@ server.on("request", async (req, res) => {
       });
       res.write(e);
       return res.end();
+    }
+  } else if (q === "/questions") {
+    if (questions.length > 0) {
+      res.writeHead(200, {
+        "content-type": "application/json",
+        "content-encoding": "utf-8",
+        "content-length": JSON.stringify(questions).length,
+      });
+      res.write(JSON.stringify(questions));
+      return res.end();
+    } else {
+      res.writeHead(404, {
+        "content-type": "application/json",
+        "content-encoding": "utf-8",
+        "content-length": 3,
+      });
+      return res.end("[]\n");
     }
   } else {
     const e = errorHtml(404, `${q} is not a recognized route`);
