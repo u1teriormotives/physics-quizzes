@@ -85,4 +85,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     num = rand();
     ans = question(num);
   });
+  document.getElementById("formq").addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    const answer = Number(document.getElementById("ans").value);
+    if (isNaN(answer) || !isFinite(answer)) {
+      return (document.getElementById("qresult").textContent =
+        "Please enter a number for your answer");
+    }
+    if (answer <= ans + 0.1 && answer >= ans - 0.1)
+      return (document.getElementById("qresult").textContent = "Correct!");
+    else return (document.getElementById("qresult").textContent = "Incorrect.");
+  });
 });
