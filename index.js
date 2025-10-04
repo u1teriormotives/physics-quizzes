@@ -108,12 +108,12 @@ server.on("request", async (req, res) => {
     }
   } else if (q === "/questions") {
     if (Object.keys(questions).length > 0) {
+      const qu = JSON.stringify(questions);
       res.writeHead(200, {
         "content-type": "application/json",
         "content-encoding": "utf-8",
-        "content-length": JSON.stringify(questions).length,
       });
-      res.write(JSON.stringify(questions));
+      res.write(qu);
       return res.end();
     } else {
       res.writeHead(404, {
