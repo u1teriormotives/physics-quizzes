@@ -1,0 +1,1 @@
+A car moving at {{v1}} m/s begins to decelerate uniformly at {{a1}} m/s^2 until it stops. Determine the distance it travels during the deceleration.

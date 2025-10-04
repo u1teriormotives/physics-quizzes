@@ -1,0 +1,1 @@
+A car accelerates uniformly from an initial velocity of {{v1}} m/s to a final velocity of {{v2}} m/s over {{a1}} seconds. Determine the acceleration of the car.

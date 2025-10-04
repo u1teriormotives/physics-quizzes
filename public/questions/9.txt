@@ -1,0 +1,1 @@
+A projectile is launched with a speed of {{v1}} m/s at an angle of {{θ1}}° above the horizontal. Determine the range of the projectile (horizontal distance traveled). Assume g = {{g}} m/s^2.

@@ -1,0 +1,1 @@
+A car starts from rest and accelerates at {{a1}} m/s^2 for {{x1}} seconds, then continues at constant velocity for {{y1}} seconds. Determine the total displacement.

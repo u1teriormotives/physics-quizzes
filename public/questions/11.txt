@@ -1,0 +1,1 @@
+A plane is flying at a velocity of {{v1}} m/s relative to the air at a heading of {{θ1}}°, while a wind blows at {{v2}} m/s at a direction of {{θ2}}° (both measured from the x-axis). Determine the resultant velocity magnitude of the plane relative to the ground.

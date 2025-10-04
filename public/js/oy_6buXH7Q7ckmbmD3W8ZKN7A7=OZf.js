@@ -23,19 +23,39 @@ let rand = mkRng(seed);
  * @param {(number|null)} y1
  * @param {(number|null)} x2
  * @param {(number|null)} y2
+ * @param {(number|null)} θ1
+ * @param {(number|null)} θ2
+ * @param {(number|null)} a1
+ * @param {(number|null)} a2
+ * @param {(number|null)} g
+ * @param {(number|null)} v1
+ * @param {(number|null)} v2
  * @returns {number}
  */
-const solve = (index, x1, y1, x2, y2) => {
+const solve = (index, x1, y1, x2, y2, θ1, θ2, a1, a2, g = 9.8, v1, v2) => {
   if (index === 1) return Math.abs(x1) / Math.abs(y1);
   else if (index === 2) return x1 * y1;
   else if (index === 3) return x1 ** 2 / (2 * y1);
   else if (index === 4) return x1 * Math.cos((y1 * Math.PI) / 180);
   else if (index === 5) return (x1 * Math.sin((y1 * Math.PI) / 180)) / x2;
   else if (index === 6) return Math.sqrt((x1 * y1) ** 2 + (x2 * y2) ** 2);
+  else if (index === 7) return (v2 - v1) / a1;
+  else if (index === 8) return (2 * v1) / g;
+  else if (index === 9)
+    return (v1 ** 2 * Math.sin((2 * θ1 * Math.PI) / 180)) / g;
+  else if (index === 10) {
+    const v = a1 * x1;
+    return 0.5 * a1 * x1 ** 2 + v * y1;
+  } else if (index === 11) {
+    const vx =
+      v1 * Math.cos((θ1 * Math.PI) / 180) + v2 * Math.cos((θ2 * Math.PI) / 180);
+    const vy =
+      v1 * Math.sin((θ1 * Math.PI) / 180) + v2 * Math.sin((θ2 * Math.PI) / 180);
+    return Math.sqrt(vx ** 2 + vy ** 2);
+  } else if (index === 12) return v1 ** 2 / (2 * a1);
 };
 /**
  * @param {number} num
- * @return {[number, number, number, number, number, string]}
  */
 const getQuest = (num) => {
   const i = Math.floor(num * Object.keys(data).length) + 1;
@@ -44,21 +64,47 @@ const getQuest = (num) => {
   const num2 = r2() * 99;
   const num3 = r2() * 99;
   const num4 = r2() * 99;
+  const num5 = r2() * 99;
+  const num6 = r2() * 99;
+  const num7 = r2() * 99;
+  const num8 = r2() * 99;
+  const num9 = r2() * 99;
+  const num10 = r2() * 99;
   const x1 = Number(num1.toFixed(2)),
     y1 = Number(num2.toFixed(2)),
     x2 = Number(num3.toFixed(2)),
-    y2 = Number(num4.toFixed(2));
+    y2 = Number(num4.toFixed(2)),
+    θ1 = Number(num5.toFixed(2)),
+    θ2 = Number(num6.toFixed(2)),
+    a1 = Number(num7.toFixed(2)),
+    a2 = Number(num8.toFixed(2)),
+    v1 = Number(num9.toFixed(2)),
+    v2 = Number(num10.toFixed(2));
   return [
-    solve(i, x1, y1, x2, y2),
+    solve(i, x1, y1, x2, y2, θ1, θ2, a1, a2, 9.8, v1, v2),
     x1,
     y1,
     x2,
     y2,
+    θ1,
+    θ2,
+    a1,
+    a2,
+    9.8,
+    v1,
+    v2,
     data[i]
       .replaceAll("{{x1}}", x1)
       .replaceAll("{{y1}}", y1)
       .replaceAll("{{x2}}", x2)
-      .replaceAll("{{y2}}", y2),
+      .replaceAll("{{y2}}", y2)
+      .replaceAll("{{θ1}}", θ1)
+      .replaceAll("{{θ2}}", θ2)
+      .replaceAll("{{a1}}", a1)
+      .replaceAll("{{a2}}", a2)
+      .replaceAll("{{g}}", 9.8)
+      .replaceAll("{{v1}}", v1)
+      .replaceAll("{{v2}}", v2),
   ];
 };
 
@@ -67,7 +113,7 @@ const getQuest = (num) => {
  * @returns {number}
  */
 const question = (r) => {
-  const [answer, x1, y1, x2, y2, q] = getQuest(r);
+  const [answer, x1, y1, x2, y2, θ1, θ2, a1, a2, g, v1, v2, q] = getQuest(r);
   document.getElementById("quest").textContent = q;
   return answer;
 };

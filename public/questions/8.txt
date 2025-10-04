@@ -1,0 +1,1 @@
+An object is thrown vertically upward with an initial velocity of {{v1}} m/s. Determine the total time the object is in the air. Assume g = {{g}} m/s^2 downward.
