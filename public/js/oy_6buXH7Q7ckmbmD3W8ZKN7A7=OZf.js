@@ -39,10 +39,11 @@ const solve = (index, x1, y1, x2, y2) => {
  */
 const getQuest = (num) => {
   const i = Math.floor(num * Object.keys(data).length) + 1;
-  const num1 = Math.random() * 99;
-  const num2 = Math.random() * 99;
-  const num3 = Math.random() * 99;
-  const num4 = Math.random() * 99;
+  const r2 = mkRng((seed - 2) / 2 + Math.E * Math.sin(seed));
+  const num1 = r2() * 99;
+  const num2 = r2() * 99;
+  const num3 = r2() * 99;
+  const num4 = r2() * 99;
   const x1 = Number(num1.toFixed(2)),
     y1 = Number(num2.toFixed(2)),
     x2 = Number(num3.toFixed(2)),
