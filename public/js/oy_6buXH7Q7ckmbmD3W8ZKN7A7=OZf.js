@@ -23,24 +23,34 @@ let rand = mkRng(seed);
  * @param {(number|null)} y
  * @returns {number}
  */
-const solve = (index, x, y) => {
-  if (index === 1) return Math.abs(x) / Math.abs(y);
+const solve = (index, x1, y1, x2, y2) => {
+  if (index === 1) return Math.abs(x1) / Math.abs(y1);
 };
 /**
  * @param {number} num
- * @return {[number, number, number, string]}
+ * @return {[number, number, number, number, number, string]}
  */
 const getQuest = (num) => {
   const i = Math.floor(num * Object.keys(data).length) + 1;
   const num1 = Math.random() * 99;
   const num2 = Math.random() * 99;
-  const x = Number(num1.toFixed(2)),
-    y = Number(num2.toFixed(2));
+  const num3 = Math.random() * 99;
+  const num4 = Math.random() * 99;
+  const x1 = Number(num1.toFixed(2)),
+    y1 = Number(num2.toFixed(2)),
+    x2 = Number(num3.toFixed(2)),
+    y2 = Number(num4.toFixed(2));
   return [
     solve(i, x, y),
-    x,
-    y,
-    data[i].replaceAll("{{x}}", x).replaceAll("{{y}}", y),
+    x1,
+    y1,
+    x2,
+    y2,
+    data[i]
+      .replaceAll("{{x1}}", x1)
+      .replaceAll("{{y1}}", y1)
+      .replaceAll("{{x2}}", x2)
+      .replaceAll("{{y2}}", y2),
   ];
 };
 
@@ -49,7 +59,7 @@ const getQuest = (num) => {
  * @returns {number}
  */
 const question = (r) => {
-  const [answer, x, y, q] = getQuest(r);
+  const [answer, x1, y1, x2, y2, q] = getQuest(r);
   document.getElementById("quest").textContent = q;
   return answer;
 };
