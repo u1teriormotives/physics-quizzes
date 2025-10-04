@@ -33,7 +33,8 @@ body {
 }
 
 div#question {
-  width: 45vw;
+  width: 90vw;
+  max-width: 700px;
 }
 span.q {
   font-size: 3.4rem;
@@ -50,17 +51,39 @@ input[type="number"] {
   padding: 12px;
 }
 
+input[type="text"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 8px #ffffff15;
+  transform: translateY(-2px);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
 input[type="submit"],
 button[type="button"] {
   background-color: var(--button-color);
   border: none;
   border-radius: 5px;
   color: var(--button-text-color);
+  font-size: 12pt;
   padding: 12px;
   transition: background 0.25s ease;
 }
 input[type="submit"]:hover,
 button[type="button"]:hover {
   background-color: var(--button-hover-color);
+  box-shadow: 0 0 8px #ffffff15;
   cursor: pointer;
+  transform: translateY(-2px);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+#seed,
+#questnum {
+  background-color: #1c1c1c;
+  border: 1px solid #5b5b5b;
+  font-family: "Oxygen Mono", monospace;
+  font-weight: 400;
+  font-size: 10pt;
+  font-style: normal;
+  padding: 4px;
 }

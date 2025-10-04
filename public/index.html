@@ -8,6 +8,13 @@
     <title>physics questions</title>
 
     <link rel="stylesheet" href="./css/OSJ6NEUYPuMxx8lkyBtmCWhuVOLQTg.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="question">
@@ -26,11 +33,13 @@
     <button type="button" id="next">Next Question</button>
     <form id="seeding">
       <div id="h">
-        <p>Your seed is <span id="seed"></span></p>
-        <p>You are currently on <span id="questnum"></span> in your set</p>
+        <p>Your seed is <span id="seed">&nbsp;</span></p>
+        <p>
+          You are currently on <span id="questnum">&nbsp;</span> in your set
+        </p>
       </div>
       <label for="seed">Seed&colon;</label>
-      <input type="number" name="seed" id="setseed" />
+      <input type="number" name="seed" id="setseed" placeholder="Enter Seed" />
       <input type="submit" value="Change Seed" />
     </form>
 
