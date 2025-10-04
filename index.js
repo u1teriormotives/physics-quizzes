@@ -10,18 +10,21 @@ const __dirname = path.dirname(__filename);
 
 const questionsPath = path.join(__dirname, "public", "questions");
 const questionsRoutes = fs.readdirSync(questionsPath);
-const questions = [];
+const questions = {};
 (async () => {
   if (questionsRoutes.length > 0) {
+    const q = [];
     for (const f of questionsRoutes) {
       const p = path.join(questionsPath, f);
       try {
         const data = await fs.promises.readFile(p, "utf8");
-        questions.push(data);
+        console.log(data);
+        q.push(data);
       } catch (error) {
         console.error(error);
       }
     }
+    q.forEach((v, i) => (questions[i + 1] = v));
   }
 })();
 
@@ -105,7 +108,7 @@ server.on("request", async (req, res) => {
       return res.end();
     }
   } else if (q === "/questions") {
-    if (questions.length > 0) {
+    if (Object.keys(questions).length > 0) {
       res.writeHead(200, {
         "content-type": "application/json",
         "content-encoding": "utf-8",
