@@ -1,13 +1,66 @@
 :root {
   --background-color: #fff;
+  --text-color: #000;
+}
+:root {
+  --default-font: Arial, helvetica, sans-serif;
+  --button-color: #bf1515;
+  --button-hover-color: #711d1d;
+  --button-text-color: #fff;
+  --input-background-color: #141424;
+  --input-text-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #081020;
+    --text-color: #fff;
   }
 }
 
 body {
+  align-items: center;
   background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--default-font);
+  height: 100vh;
+  gap: 1.2rem;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+}
+
+div#question {
+  width: 45vw;
+}
+span.q {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: var(--input-background-color);
+  border: none;
+  border-radius: 12px;
+  color: var(--input-text-color);
+  font-size: 12pt;
+  padding: 12px;
+}
+
+input[type="submit"],
+button[type="button"] {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--button-text-color);
+  padding: 12px;
+  transition: background 0.25s ease;
+}
+input[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
 }

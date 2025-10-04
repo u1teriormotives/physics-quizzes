@@ -10,12 +10,29 @@
     <link rel="stylesheet" href="./css/OSJ6NEUYPuMxx8lkyBtmCWhuVOLQTg.css" />
   </head>
   <body>
-    <p id="quest"></p>
-    <form id="form">
-      <input type="text" name="ans" id="ans" />
+    <div id="question">
+      <span class="q">Current Question&colon;</span>
+      <p id="quest">
+        Suppose the Andromeda Galaxy were to be a flat disc&comma; How many
+        Targets could fit inside until at least three black holes formed from
+        their collective gravitational field&quest;
+      </p>
+    </div>
+    <form id="formq">
+      <label for="ans">Answer&colon;</label>
+      <input type="text" name="ans" id="ans" placeholder="Enter Answer" />
       <input type="submit" value="Check Answer" />
     </form>
     <button type="button" id="next">Next Question</button>
+    <form id="seeding">
+      <div id="h">
+        <p>Your seed is <span id="seed"></span></p>
+        <p>You are currently on <span id="questnum"></span> in your set</p>
+      </div>
+      <label for="seed">Seed&colon;</label>
+      <input type="number" name="seed" id="setseed" />
+      <input type="submit" value="Change Seed" />
+    </form>
 
     <script src="./js/oy_6buXH7Q7ckmbmD3W8ZKN7A7=OZf.js"></script>
   </body>

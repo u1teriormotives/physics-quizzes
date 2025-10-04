@@ -18,7 +18,6 @@ const questions = {};
       const p = path.join(questionsPath, f);
       try {
         const data = await fs.promises.readFile(p, "utf8");
-        console.log(data);
         q.push(data);
       } catch (error) {
         console.error(error);
