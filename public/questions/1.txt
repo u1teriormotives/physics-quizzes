@@ -1,1 +1,1 @@
-test question
+A car is traveling at a velocity of {{x}} m s^-1. Suddenly, the brakes are applied, resulting in a deceleration of {{x}} m s^2. In seconds, determine how much time it will take the car to come to a stop.
