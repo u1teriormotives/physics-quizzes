@@ -1,0 +1,1 @@
+An object starts from rest and accelerates at a rate of {{x1}} m/s^2 for {{y1}} seconds. Determine the final velocity of the object.

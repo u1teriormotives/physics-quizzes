@@ -1,0 +1,1 @@
+A car travels in the x-direction at a constant velocity of {{x1}} m/s for {{y1}} seconds, then in the y-direction at {{x2}} m/s for {{y2}} seconds. Determine the magnitude of its total displacement.

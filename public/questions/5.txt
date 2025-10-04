@@ -1,0 +1,1 @@
+A projectile is launched at a speed of {{x1}} m/s at an angle of {{y1}}° above the horizontal. Determine the time it takes to reach the maximum height, assuming gravity is {{x2}} m/s^2 downward.

@@ -19,12 +19,19 @@ let rand = mkRng(seed);
 
 /**
  * @param {number} index
- * @param {number} x
- * @param {(number|null)} y
+ * @param {number} x1
+ * @param {(number|null)} y1
+ * @param {(number|null)} x2
+ * @param {(number|null)} y2
  * @returns {number}
  */
 const solve = (index, x1, y1, x2, y2) => {
   if (index === 1) return Math.abs(x1) / Math.abs(y1);
+  else if (index === 2) return x1 * y1;
+  else if (index === 3) return x1 ** 2 / (2 * y1);
+  else if (index === 4) return x1 * Math.cos((y1 * Math.PI) / 180);
+  else if (index === 5) return (x1 * Math.sin((y1 * Math.PI) / 180)) / x2;
+  else if (index === 6) return Math.sqrt((x1 * y1) ** 2 + (x2 * y2) ** 2);
 };
 /**
  * @param {number} num
@@ -41,7 +48,7 @@ const getQuest = (num) => {
     x2 = Number(num3.toFixed(2)),
     y2 = Number(num4.toFixed(2));
   return [
-    solve(i, x, y),
+    solve(i, x1, y1, x2, y2),
     x1,
     y1,
     x2,
@@ -64,6 +71,10 @@ const question = (r) => {
   return answer;
 };
 
+let iter = 1,
+  num = 0,
+  ans = 0;
+
 document.addEventListener("DOMContentLoaded", async () => {
   const qReq = await fetch("/questions");
   if (qReq.status !== 200) {
@@ -74,9 +85,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const qData = await qReq.json();
   data = qData;
 
-  let iter = 1;
-  let num = rand();
-  let ans = question(num);
+  iter = 1;
+  num = rand();
+  ans = question(num);
 
   document.getElementById("questnum").textContent = iter;
   document.getElementById("seed").textContent = seed;

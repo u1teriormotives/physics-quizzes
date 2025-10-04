@@ -1,0 +1,1 @@
+A ball is thrown straight upward with an initial velocity of {{x1}} m/s. Assuming a constant downward acceleration of {{y1}} m/s^2 due to gravity, determine the maximum height the ball reaches.

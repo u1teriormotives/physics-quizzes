@@ -1,0 +1,1 @@
+A projectile is launched at a speed of {{x1}} m/s at an angle of {{y1}}° above the horizontal. Determine the horizontal component of its velocity.
