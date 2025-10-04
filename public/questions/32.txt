@@ -1,0 +1,1 @@
+A projectile reaches a maximum height of {{x1}} meters under gravity {{g}}. Determine its initial vertical velocity.

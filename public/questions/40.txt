@@ -1,0 +1,1 @@
+A rock is thrown straight up with velocity {{v1}} m/s. Determine how long it takes to reach its maximum height.

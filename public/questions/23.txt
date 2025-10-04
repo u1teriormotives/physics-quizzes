@@ -1,0 +1,1 @@
+A projectile is fired at {{θ1}}° with an initial velocity {{v1}} m/s. Determine the horizontal velocity component at any time.

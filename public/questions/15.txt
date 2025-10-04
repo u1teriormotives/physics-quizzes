@@ -1,0 +1,1 @@
+A runner accelerates uniformly from rest at {{a1}} m/s^2 for {{x1}} seconds. Determine the total distance covered.

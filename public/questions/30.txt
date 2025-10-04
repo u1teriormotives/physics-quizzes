@@ -1,0 +1,1 @@
+A stone is dropped from a cliff of height {{x1}} m and hits the ground with velocity {{v1}} m/s. Determine the value of g from this data.

@@ -1,0 +1,1 @@
+A boat heads directly across a river with a speed of {{v1}} m/s relative to the water. The river flows at {{v2}} m/s. Determine the boat’s actual velocity magnitude relative to the ground.

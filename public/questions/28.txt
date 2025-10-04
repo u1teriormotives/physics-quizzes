@@ -1,0 +1,1 @@
+A block slides down a frictionless incline at an angle of {{θ1}}° to the horizontal. Determine its acceleration.

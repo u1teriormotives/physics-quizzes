@@ -1,0 +1,1 @@
+A projectile fired at an angle {{θ1}}° with speed {{v1}} m/s lands at the same height. Determine the time of flight.

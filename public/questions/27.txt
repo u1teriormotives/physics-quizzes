@@ -1,0 +1,1 @@
+A ball is thrown horizontally from a height of {{x1}} m with a speed of {{v1}} m/s. Determine the time it takes to hit the ground and its horizontal range (return total horizontal distance).

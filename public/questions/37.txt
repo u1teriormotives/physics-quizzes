@@ -1,0 +1,1 @@
+A ball is dropped from a height of {{x1}} m and takes {{y1}} seconds to hit the ground. Determine the value of g from this data.

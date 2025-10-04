@@ -1,0 +1,1 @@
+A plane flying due north at {{v1}} m/s encounters a crosswind blowing east at {{v2}} m/s. Determine the magnitude of the resultant velocity.

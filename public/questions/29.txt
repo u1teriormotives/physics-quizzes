@@ -1,0 +1,1 @@
+A projectile is launched with speed {{v1}} m/s at angle {{θ1}}°. Determine the vertical velocity after {{x1}} seconds.

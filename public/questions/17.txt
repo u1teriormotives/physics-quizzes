@@ -1,0 +1,1 @@
+A car accelerates from {{v1}} m/s to {{v2}} m/s in {{x1}} seconds. Determine the average velocity during this time.

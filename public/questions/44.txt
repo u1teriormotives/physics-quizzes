@@ -1,0 +1,1 @@
+A plane flying east at {{v1}} m/s is blown south at {{v2}} m/s. Determine its resultant speed and direction (angle south of east).

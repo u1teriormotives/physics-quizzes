@@ -1,0 +1,1 @@
+A car accelerates at {{a1}} m/s^2 for {{x1}} seconds, reaching velocity {{v1}}. Determine how far it traveled.

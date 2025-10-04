@@ -1,0 +1,1 @@
+A car is moving at {{v1}} m/s and comes to rest after traveling {{x1}} meters under constant deceleration. Determine the deceleration.

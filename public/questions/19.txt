@@ -1,0 +1,1 @@
+An object moves along a straight line with a constant acceleration of {{a1}} m/s^2. If it covers a distance of {{x1}} m starting from rest, determine its final velocity.

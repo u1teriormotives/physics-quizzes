@@ -1,0 +1,1 @@
+A stone is thrown horizontally from a height of {{x1}} meters with a velocity of {{v1}} m/s. Determine the impact velocity magnitude when it hits the ground.

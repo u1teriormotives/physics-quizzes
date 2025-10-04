@@ -1,0 +1,1 @@
+A projectile is launched with speed {{v1}} m/s at {{θ1}}°. Determine its maximum range ignoring air resistance.

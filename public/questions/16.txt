@@ -1,0 +1,1 @@
+A projectile is launched horizontally at {{v1}} m/s from a cliff {{x1}} meters high. Determine how far horizontally it travels before hitting the ground.

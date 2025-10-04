@@ -1,0 +1,1 @@
+A ball is thrown at an angle {{θ1}}° with an initial velocity of {{v1}} m/s. Determine the total time of flight. Assume gravity is {{g}} m/s^2.

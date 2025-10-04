@@ -1,0 +1,1 @@
+A rock is dropped from a height of {{x1}} meters. Assuming gravity is {{g}} m/s^2 downward, determine how long it takes to hit the ground.

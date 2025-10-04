@@ -1,0 +1,1 @@
+A car travels 100 m while accelerating from rest at {{a1}} m/s^2. Determine its final velocity.

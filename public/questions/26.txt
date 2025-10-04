@@ -1,0 +1,1 @@
+A car accelerates from rest at {{a1}} m/s^2 for {{x1}} seconds, then decelerates at {{a2}} m/s^2 until it stops. Determine the total distance traveled.

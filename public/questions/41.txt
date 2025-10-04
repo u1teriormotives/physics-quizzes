@@ -1,0 +1,1 @@
+A car traveling at {{v1}} m/s slows uniformly to {{v2}} m/s over a distance of {{x1}} m. Determine its acceleration.

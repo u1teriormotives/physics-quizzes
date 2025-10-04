@@ -1,0 +1,1 @@
+A stone is projected at {{θ1}}° with speed {{v1}} m/s. Determine its velocity angle above the horizontal after {{x1}} seconds.

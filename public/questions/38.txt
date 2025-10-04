@@ -1,0 +1,1 @@
+A plane flies with an airspeed of {{v1}} m/s at a heading of {{θ1}}°. The wind blows with a velocity of {{v2}} m/s due east. Determine the resultant ground-velocity magnitude.

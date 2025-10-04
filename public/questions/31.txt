@@ -1,0 +1,1 @@
+A car travels at {{v1}} m/s for {{x1}} seconds and then accelerates at {{a1}} m/s^2 for {{y1}} seconds. Determine the total displacement.

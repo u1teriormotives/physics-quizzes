@@ -1,0 +1,1 @@
+A ball is launched upward from the ground with an initial velocity of {{v1}} m/s. After {{x1}} seconds, determine its velocity. Assume gravity is {{g}} m/s^2 downward.

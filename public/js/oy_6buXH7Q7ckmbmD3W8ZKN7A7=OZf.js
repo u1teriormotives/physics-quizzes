@@ -53,6 +53,60 @@ const solve = (index, x1, y1, x2, y2, θ1, θ2, a1, a2, g = 9.8, v1, v2) => {
       v1 * Math.sin((θ1 * Math.PI) / 180) + v2 * Math.sin((θ2 * Math.PI) / 180);
     return Math.sqrt(vx ** 2 + vy ** 2);
   } else if (index === 12) return v1 ** 2 / (2 * a1);
+  else if (index === 13) return Math.sqrt((2 * x1) / g);
+  else if (index === 14)
+    return (v1 ** 2 * Math.sin((θ1 * Math.PI) / 180) ** 2) / (2 * g);
+  else if (index === 15) return 0.5 * a1 * x1 ** 2;
+  else if (index === 16) {
+    const t = Math.sqrt((2 * x1) / g);
+    return v1 * t;
+  } else if (index === 17) return (v1 + v2) / 2;
+  else if (index === 18) return Math.sqrt(v1 ** 2 + v2 ** 2);
+  else if (index === 19) return Math.sqrt(2 * a1 * x1);
+  else if (index === 20) return (2 * v1 * Math.sin((θ1 * Math.PI) / 180)) / g;
+  else if (index === 21) return -(v1 ** 2 / (2 * x1));
+  else if (index === 22) {
+    const vy = Math.sqrt(2 * g * x1);
+    return Math.sqrt(v1 ** 2 + vy ** 2);
+  } else if (index === 23) return v1 * Math.cos((θ1 * Math.PI) / 180);
+  else if (index === 24) return v1 - g * x1;
+  else if (index === 25) return v1 + a1 * y1;
+  else if (index === 26) {
+    const s1 = 0.5 * a1 * x1 ** 2;
+    const v = a1 * x1;
+    const s2 = v ** 2 / (2 * a2);
+    return s1 + s2;
+  } else if (index === 27) {
+    const t = Math.sqrt((2 * x1) / g);
+    return v1 * t;
+  } else if (index === 28) return g * Math.sin((θ1 * Math.PI) / 180);
+  else if (index === 29) return v1 * Math.sin((θ1 * Math.PI) / 180) - g * x1;
+  else if (index === 30) return v1 ** 2 / (2 * x1);
+  else if (index === 31) return v1 * x1 + v1 * y1 + 0.5 * a1 * y1 ** 2;
+  else if (index === 32) return Math.sqrt(2 * g * x1);
+  else if (index === 33) {
+    const vx = v1 * Math.cos((θ1 * Math.PI) / 180);
+    const vy = v1 * Math.sin((θ1 * Math.PI) / 180) - g * x1;
+    return (Math.atan(vy / vx) * 180) / Math.PI;
+  } else if (index === 34) return v1 * x1 + 0.5 * a1 * x1 ** 2;
+  else if (index === 35)
+    return (v1 ** 2 * Math.sin((2 * θ1 * Math.PI) / 180)) / g;
+  else if (index === 36) return Math.sqrt(v1 ** 2 + v2 ** 2);
+  else if (index === 37) return (2 * x1) / y1 ** 2;
+  else if (index === 38) {
+    const vx = v1 * Math.cos((θ1 * Math.PI) / 180) + v2;
+    const vy = v1 * Math.sin((θ1 * Math.PI) / 180);
+    return Math.sqrt(vx ** 2 + vy ** 2);
+  } else if (index === 39) return (Math.atan(v2 / v1) * 180) / Math.PI;
+  else if (index === 40) return v1 / g;
+  else if (index === 41) return (v2 ** 2 - v1 ** 2) / (2 * x1);
+  else if (index === 42) return (2 * v1 * Math.sin((θ1 * Math.PI) / 180)) / g;
+  else if (index === 43) return v1 ** 2 / (2 * a1);
+  else if (index === 44) {
+    const v = Math.sqrt(v1 ** 2 + v2 ** 2);
+    const θ = (Math.atan(v2 / v1) * 180) / Math.PI;
+    return { magnitude: v, angle: θ };
+  } else if (index === 45) return Math.sqrt(2 * a1 * 100);
 };
 /**
  * @param {number} num
@@ -163,5 +217,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (answer <= ans + 0.1 && answer >= ans - 0.1)
       return (document.getElementById("qresult").textContent = "Correct!");
     else return (document.getElementById("qresult").textContent = "Incorrect.");
+  });
+  document.getElementById("next").addEventListener("click", () => {
+    num = rand();
+    ans = question(num);
+    iter++;
+    document.getElementById("questnum").textContent = iter;
   });
 });

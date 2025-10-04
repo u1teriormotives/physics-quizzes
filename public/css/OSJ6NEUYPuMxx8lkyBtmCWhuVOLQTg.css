@@ -76,6 +76,10 @@ button[type="button"]:hover {
   transform: translateY(-2px);
   transition: box-shadow 0.5s ease, transform 0.5s ease;
 }
+input[type="submit"]:active,
+button[type="button"]:active {
+  transform: translateY(2px);
+}
 
 #seed,
 #questnum {

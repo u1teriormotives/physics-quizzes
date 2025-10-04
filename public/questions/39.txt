@@ -1,0 +1,1 @@
+A plane flying north at {{v1}} m/s experiences a crosswind from the west at {{v2}} m/s. Determine the direction (angle east of north) of its resultant velocity.

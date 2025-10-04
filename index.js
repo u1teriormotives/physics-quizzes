@@ -46,7 +46,6 @@ server.on("request", async (req, res) => {
       res.writeHead(200, {
         "content-type": "text/html",
         "content-encoding": "utf-8",
-        "content-length": data.length,
       });
       res.write(data);
       return res.end();
@@ -55,7 +54,6 @@ server.on("request", async (req, res) => {
       res.writeHead(404, {
         "content-type": "text/html",
         "content-encoding": "utf-8",
-        "content-length": e.length,
       });
       res.write(e);
       return res.end();
@@ -69,7 +67,6 @@ server.on("request", async (req, res) => {
       res.writeHead(200, {
         "content-type": "text/javascript",
         "content-encoding": "utf-8",
-        "content-length": data.length,
       });
       res.write(data);
       return res.end();
@@ -78,7 +75,6 @@ server.on("request", async (req, res) => {
       res.writeHead(404, {
         "content-type": "text/javascript",
         "content-encoding": "utf-8",
-        "content-length": e.length,
       });
       res.write(e);
       return res.end();
@@ -92,7 +88,6 @@ server.on("request", async (req, res) => {
       res.writeHead(200, {
         "content-type": "text/css",
         "content-encoding": "utf-8",
-        "content-length": data.length,
       });
       res.write(data);
       return res.end();
@@ -101,7 +96,6 @@ server.on("request", async (req, res) => {
       res.writeHead(404, {
         "content-type": "text/css",
         "content-encoding": "utf-8",
-        "content-length": e.length,
       });
       res.write(e);
       return res.end();
@@ -119,7 +113,6 @@ server.on("request", async (req, res) => {
       res.writeHead(404, {
         "content-type": "application/json",
         "content-encoding": "utf-8",
-        "content-length": 3,
       });
       return res.end("[]\n");
     }
@@ -128,7 +121,6 @@ server.on("request", async (req, res) => {
     res.writeHead(404, {
       "content-type": "text/html",
       "content-encoding": "utf-8",
-      "content-length": e.length,
     });
     res.write(e);
     return res.end();

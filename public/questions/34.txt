@@ -1,0 +1,1 @@
+A car is initially moving at {{v1}} m/s and accelerates at {{a1}} m/s^2 for {{x1}} seconds. Determine the distance traveled during this time.
