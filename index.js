@@ -11,21 +11,19 @@ const __dirname = path.dirname(__filename);
 const questionsPath = path.join(__dirname, "public", "questions");
 const questionsRoutes = fs.readdirSync(questionsPath);
 const questions = {};
-(async () => {
-  if (questionsRoutes.length > 0) {
-    const q = [];
-    for (const f of questionsRoutes) {
-      const p = path.join(questionsPath, f);
-      try {
-        const data = await fs.promises.readFile(p, "utf8");
-        q.push(data);
-      } catch (error) {
-        console.error(error);
-      }
+if (questionsRoutes.length > 0) {
+  const q = [];
+  for (const f of questionsRoutes) {
+    const p = path.join(questionsPath, f);
+    try {
+      const data = await fs.promises.readFile(p, "utf8");
+      q.push(data);
+    } catch (error) {
+      console.error(error);
     }
-    q.forEach((v, i) => (questions[i + 1] = v));
   }
-})();
+  q.forEach((v, i) => (questions[i + 1] = v));
+}
 
 const jsStaticPath = path.join(__dirname, "public", "js");
 const jsStaticRoutes = fs.readdirSync(jsStaticPath);
