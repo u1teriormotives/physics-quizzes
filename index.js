@@ -41,6 +41,7 @@ if (questionsRoutes.length > 0) {
           θ1: 0,
           θ2: 100,
         },
+        solution: "",
       })
   );
 }
