@@ -9,3 +9,9 @@ physics question generator! (currently just kinematics, 1-D & 2-D) it's based on
 number generator to allow you to help any and all friends who may be having problems with their
 problems. copy their seed, change yours to it, and skip to the question number they're on: you have the
 exact same question with the exact same values, and you can help them right from your computer!
+
+---
+
+## TODO
+1. implement custom ranges
+2. add more questions
