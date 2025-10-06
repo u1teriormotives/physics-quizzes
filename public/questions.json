@@ -1,0 +1,722 @@
+{
+  "1": {
+    "question": "A car is traveling at a velocity of {{x1}} m s^-1. Suddenly, the brakes are applied, resulting in a deceleration of {{y1}} m s^2. In seconds, determine how much time it will take the car to come to a stop.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "2": {
+    "question": "An object starts from rest and accelerates at a rate of {{x1}} m/s^2 for {{y1}} seconds. Determine the final velocity of the object.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "3": {
+    "question": "A ball is thrown straight upward with an initial velocity of {{x1}} m/s. Assuming a constant downward acceleration of {{y1}} m/s^2 due to gravity, determine the maximum height the ball reaches.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "4": {
+    "question": "A projectile is launched at a speed of {{x1}} m/s at an angle of {{y1}}° above the horizontal. Determine the horizontal component of its velocity.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "5": {
+    "question": "A projectile is launched at a speed of {{x1}} m/s at an angle of {{y1}}° above the horizontal. Determine the time it takes to reach the maximum height, assuming gravity is {{x2}} m/s^2 downward.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "6": {
+    "question": "A car travels in the x-direction at a constant velocity of {{x1}} m/s for {{y1}} seconds, then in the y-direction at {{x2}} m/s for {{y2}} seconds. Determine the magnitude of its total displacement.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "7": {
+    "question": "A car accelerates uniformly from an initial velocity of {{v1}} m/s to a final velocity of {{v2}} m/s over {{a1}} seconds. Determine the acceleration of the car.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "8": {
+    "question": "An object is thrown vertically upward with an initial velocity of {{v1}} m/s. Determine the total time the object is in the air. Assume g = {{g}} m/s^2 downward.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "9": {
+    "question": "A projectile is launched with a speed of {{v1}} m/s at an angle of {{θ1}}° above the horizontal. Determine the range of the projectile (horizontal distance traveled). Assume g = {{g}} m/s^2.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "10": {
+    "question": "A car starts from rest and accelerates at {{a1}} m/s^2 for {{x1}} seconds, then continues at constant velocity for {{y1}} seconds. Determine the total displacement.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "11": {
+    "question": "A plane is flying at a velocity of {{v1}} m/s relative to the air at a heading of {{θ1}}°, while a wind blows at {{v2}} m/s at a direction of {{θ2}}° (both measured from the x-axis). Determine the resultant velocity magnitude of the plane relative to the ground.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "12": {
+    "question": "A car moving at {{v1}} m/s begins to decelerate uniformly at {{a1}} m/s^2 until it stops. Determine the distance it travels during the deceleration.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "13": {
+    "question": "A rock is dropped from a height of {{x1}} meters. Assuming gravity is {{g}} m/s^2 downward, determine how long it takes to hit the ground.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "14": {
+    "question": "A projectile is launched with a speed of {{v1}} m/s at an angle of {{θ1}}° above the horizontal. Determine the maximum height it reaches.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "15": {
+    "question": "A runner accelerates uniformly from rest at {{a1}} m/s^2 for {{x1}} seconds. Determine the total distance covered.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "16": {
+    "question": "A projectile is launched horizontally at {{v1}} m/s from a cliff {{x1}} meters high. Determine how far horizontally it travels before hitting the ground.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "17": {
+    "question": "A car accelerates from {{v1}} m/s to {{v2}} m/s in {{x1}} seconds. Determine the average velocity during this time.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "18": {
+    "question": "A plane flying due north at {{v1}} m/s encounters a crosswind blowing east at {{v2}} m/s. Determine the magnitude of the resultant velocity.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "19": {
+    "question": "An object moves along a straight line with a constant acceleration of {{a1}} m/s^2. If it covers a distance of {{x1}} m starting from rest, determine its final velocity.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "20": {
+    "question": "A ball is thrown at an angle {{θ1}}° with an initial velocity of {{v1}} m/s. Determine the total time of flight. Assume gravity is {{g}} m/s^2.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "21": {
+    "question": "A car is moving at {{v1}} m/s and comes to rest after traveling {{x1}} meters under constant deceleration. Determine the deceleration.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "22": {
+    "question": "A stone is thrown horizontally from a height of {{x1}} meters with a velocity of {{v1}} m/s. Determine the impact velocity magnitude when it hits the ground.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "23": {
+    "question": "A projectile is fired at {{θ1}}° with an initial velocity {{v1}} m/s. Determine the horizontal velocity component at any time.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "24": {
+    "question": "A ball is launched upward from the ground with an initial velocity of {{v1}} m/s. After {{x1}} seconds, determine its velocity. Assume gravity is {{g}} m/s^2 downward.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "25": {
+    "question": "A car travels with a velocity of {{v1}} m/s for {{x1}} seconds, then accelerates at {{a1}} m/s^2 for {{y1}} seconds. Determine its final velocity.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "26": {
+    "question": "A car accelerates from rest at {{a1}} m/s^2 for {{x1}} seconds, then decelerates at {{a2}} m/s^2 until it stops. Determine the total distance traveled.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "27": {
+    "question": "A ball is thrown horizontally from a height of {{x1}} m with a speed of {{v1}} m/s. Determine the time it takes to hit the ground and its horizontal range (return total horizontal distance).",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "28": {
+    "question": "A block slides down a frictionless incline at an angle of {{θ1}}° to the horizontal. Determine its acceleration.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "29": {
+    "question": "A projectile is launched with speed {{v1}} m/s at angle {{θ1}}°. Determine the vertical velocity after {{x1}} seconds.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "30": {
+    "question": "A stone is dropped from a cliff of height {{x1}} m and hits the ground with velocity {{v1}} m/s. Determine the value of g from this data.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "31": {
+    "question": "A car travels at {{v1}} m/s for {{x1}} seconds and then accelerates at {{a1}} m/s^2 for {{y1}} seconds. Determine the total displacement.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "32": {
+    "question": "A projectile reaches a maximum height of {{x1}} meters under gravity {{g}}. Determine its initial vertical velocity.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "33": {
+    "question": "A stone is projected at {{θ1}}° with speed {{v1}} m/s. Determine its velocity angle above the horizontal after {{x1}} seconds.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "34": {
+    "question": "A car is initially moving at {{v1}} m/s and accelerates at {{a1}} m/s^2 for {{x1}} seconds. Determine the distance traveled during this time.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "35": {
+    "question": "A projectile is launched with speed {{v1}} m/s at {{θ1}}°. Determine its maximum range ignoring air resistance.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "36": {
+    "question": "A boat heads directly across a river with a speed of {{v1}} m/s relative to the water. The river flows at {{v2}} m/s. Determine the boat’s actual velocity magnitude relative to the ground.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "37": {
+    "question": "A ball is dropped from a height of {{x1}} m and takes {{y1}} seconds to hit the ground. Determine the value of g from this data.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "38": {
+    "question": "A plane flies with an airspeed of {{v1}} m/s at a heading of {{θ1}}°. The wind blows with a velocity of {{v2}} m/s due east. Determine the resultant ground-velocity magnitude.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "39": {
+    "question": "A plane flying north at {{v1}} m/s experiences a crosswind from the west at {{v2}} m/s. Determine the direction (angle east of north) of its resultant velocity.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "40": {
+    "question": "A rock is thrown straight up with velocity {{v1}} m/s. Determine how long it takes to reach its maximum height.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "41": {
+    "question": "A car traveling at {{v1}} m/s slows uniformly to {{v2}} m/s over a distance of {{x1}} m. Determine its acceleration.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "42": {
+    "question": "A projectile fired at an angle {{θ1}}° with speed {{v1}} m/s lands at the same height. Determine the time of flight.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "43": {
+    "question": "A car accelerates at {{a1}} m/s^2 for {{x1}} seconds, reaching velocity {{v1}}. Determine how far it traveled.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "44": {
+    "question": "A plane flying east at {{v1}} m/s is blown south at {{v2}} m/s. Determine its resultant speed and direction (angle south of east).",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  },
+  "45": {
+    "question": "A car travels 100 m while accelerating from rest at {{a1}} m/s^2. Determine its final velocity.",
+    "ranges": {
+      "a1": 0,
+      "a2": 100,
+      "g": 9.8,
+      "v1": 0,
+      "v2": 100,
+      "x1": 0,
+      "x2": 100,
+      "y1": 100,
+      "y2": 100,
+      "θ1": 0,
+      "θ2": 100
+    }
+  }
+}

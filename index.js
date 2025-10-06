@@ -9,7 +9,9 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const questionsPath = path.join(__dirname, "public", "questions");
-const questionsRoutes = fs.readdirSync(questionsPath);
+const questionsRoutes = fs
+  .readdirSync(questionsPath, "utf8")
+  .sort((a, b) => Number(a.split(".")[0]) - Number(b.split(".")[0]));
 const questions = {};
 if (questionsRoutes.length > 0) {
   const q = [];
@@ -22,7 +24,25 @@ if (questionsRoutes.length > 0) {
       console.error(error);
     }
   }
-  q.forEach((v, i) => (questions[i + 1] = v));
+  q.forEach(
+    (v, i) =>
+      (questions[i + 1] = {
+        question: v,
+        ranges: {
+          a1: 0,
+          a2: 100,
+          g: 9.8,
+          v1: 0,
+          v2: 100,
+          x1: 0,
+          x2: 100,
+          y1: 100,
+          y2: 100,
+          θ1: 0,
+          θ2: 100,
+        },
+      })
+  );
 }
 
 const jsStaticPath = path.join(__dirname, "public", "js");
